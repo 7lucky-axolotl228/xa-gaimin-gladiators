@@ -197,7 +197,7 @@ select:-webkit-autofill:focus {
 }
 
 .sitenav__item:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .sitenav__item:not(:last-child) {
@@ -215,7 +215,7 @@ select:-webkit-autofill:focus {
 }
 
 
-/* SITE HEADER BOTTOM */
+/* HERO */
 .hero {
   opacity: 1;
   background-color: #141413;
