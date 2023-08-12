@@ -81,6 +81,10 @@ select:-webkit-autofill:focus {
 }
 
 .logo__img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
 }
 
 /* BUTTON */
@@ -150,8 +154,17 @@ select:-webkit-autofill:focus {
 
 /* SITE HEADER TOP */
 .site-header {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .site-header__container {
@@ -175,6 +188,7 @@ select:-webkit-autofill:focus {
 
 .sitenav__item {
   padding: 8px 20px;
+  border-radius: 4px;
 }
 
 .sitenav__item:hover {
@@ -198,12 +212,28 @@ select:-webkit-autofill:focus {
 
 /* SITE HEADER BOTTOM */
 .hero {
-  z-index: 100;
-  background-image: url("../img/main-background-img.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  opacity: 1;
+    background-color: #141413;
+    background-image: linear-gradient(179deg, rgba(20, 20, 19, .65), #141413 89%, #141413 100%, #141413), url("../img/main-background-img.png");
+    background-position: 0 0, 0 0;
+    background-repeat: repeat, repeat;
+    background-size: auto, cover;
+    justify-content: center;
+    align-items: center;
+    padding: 220px 3%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
 }
+
+.hero__img {
+  position: absolute;
+  top: -50px;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
 .hero__list {
   position: absolute;
   left: -408px;
@@ -232,6 +262,7 @@ select:-webkit-autofill:focus {
 }
 
 .hero__content {
+  opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
