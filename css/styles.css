@@ -85,21 +85,51 @@ select:-webkit-autofill:focus {
 
 /* BUTTON */
 .button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
   font-family: "Rajdhani";
   text-transform: uppercase;
 }
 
 .btn-white {
   padding: 10px 25px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
   color: #fff;
   border-radius: 4px;
   border: 1px solid #fff;
   background-color: transparent;
-  text-decoration: none;
 }
+
+.btn-gray {
+  margin-right: 25px;
+  padding: 14px;
+  color: #000;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  background-color: var(--gray);
+}
+
+.btn-gray:hover {
+  color: var(--gray);
+  border-color: var(--gray);
+  background-color: transparent;
+}
+
+.btn-transparent {
+  padding: 14px;
+  color: var(--gray);
+  border-radius: 6px;
+  border: 2px solid var(--gray);
+  background-color: transparent;
+}
+
+.btn-transparent:hover {
+  color: #000;
+  background-color: var(--gray);
+}
+
 
 
 /* CONTAINER */
@@ -120,14 +150,11 @@ select:-webkit-autofill:focus {
 
 /* SITE HEADER TOP */
 .site-header {
-}
-
-.site-header__container {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.site-header__top {
+.site-header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -166,6 +193,81 @@ select:-webkit-autofill:focus {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+
+/* SITE HEADER BOTTOM */
+.hero {
+  z-index: 100;
+  background-image: url("../img/main-background-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.hero__list {
+  position: absolute;
+  left: -408px;
+  top: 280px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: rotate(-90deg);
+}
+
+.hero__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.hero__link {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #818171;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 820px;
+  padding-top: 140px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.hero__motto {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--gray);
+  font-family: "Rajdhani", serif;
+  text-transform: uppercase;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-size: 80px;
+  line-height: 88px;
+  font-weight: 700;
+  font-family: "Rajdhani", serif;
+  text-transform: uppercase;
+}
+
+.hero__button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
