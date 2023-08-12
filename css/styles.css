@@ -197,7 +197,7 @@ select:-webkit-autofill:focus {
 }
 
 .sitenav__item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .sitenav__item:not(:last-child) {
